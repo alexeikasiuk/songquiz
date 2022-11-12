@@ -1,0 +1,13 @@
+.logo {
+  font: 7rem Parisienne;
+  margin: 0;
+  @include media-laptop {
+    font-size: 5rem;
+  }
+  @include media-small-mobile {
+    font-size: 4rem;
+  }
+}
+.logo__theme {
+  color: $color-logo;
+}

@@ -1,0 +1,22 @@
+$color-body-bg: rgb(34, 34, 34);
+$color-main-bg: rgb(34, 34, 34);
+$color-block-bg: rgb(48, 48, 48);
+$color-controls-bg: rgb(0, 156, 118);
+$color-controls-active-bg: rgb(0, 188, 140);
+$color-main-text: rgb(255, 255, 255);
+$color-logo: rgb(0, 157, 118);
+$color-block-border: rgb(63, 63, 63);
+$color-default-checkbox: rgb(68, 68, 68);
+$color-wrong-checkbox: rgb(214, 45, 27);
+$color-player-range-bg: rgb(128, 128, 128);
+$color-active-player-range-bg: linear-gradient(
+  90deg,
+  rgba(0, 188, 140, 1) 0%,
+  rgba(0, 212, 255, 1) 100%
+);
+// media queries
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+$usm: 450px;

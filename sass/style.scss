@@ -1,0 +1,38 @@
+@import 'base/reset';
+@import 'base/fonts';
+@import 'abstract/constants';
+@import 'abstract/mixins';
+@import 'base/base';
+
+// layouts
+@import 'layouts/wrapper';
+@import 'layouts/header';
+@import 'layouts/main';
+@import 'layouts/footer';
+
+// components
+// header
+@import 'components/logo';
+@import 'components/navigation';
+
+// page
+@import 'components/page';
+
+// start page
+@import 'components/start-page';
+@import 'components/quiz';
+
+// game page
+@import 'components/game-page';
+@import 'components/levels';
+@import 'components/task';
+@import 'components/answers';
+@import 'components/answer-data';
+@import 'components/player';
+@import 'components/win';
+
+// results page
+@import 'components/results-page';
+
+// footer
+@import 'components/school';

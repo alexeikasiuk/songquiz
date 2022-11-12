@@ -1,0 +1,58 @@
+.answers {
+  background-color: $color-block-bg;
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: 1px solid $color-block-border;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 290px;
+  @include media-tablet {
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex-direction: row;
+    display: block;
+  }
+}
+.answer {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color-block-border;
+  line-height: 100%;
+  padding-left: 20px;
+  transition: all 0.3s;
+  @include media-tablet {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    &:nth-of-type(even) {
+      border-left: 1px solid $color-block-border;
+    }
+  }
+  &:hover {
+    background-color: $color-default-checkbox;
+  }
+  &:active {
+    background-color: $color-block-bg;
+  }
+}
+.flag {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-default-checkbox;
+}
+._correct {
+  background-color: $color-controls-bg;
+}
+._wrong {
+  background-color: $color-wrong-checkbox;
+}
+.name {
+  padding-left: 15px;
+  font-size: 1.4rem;
+}

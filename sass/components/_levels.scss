@@ -1,0 +1,25 @@
+.levels__container {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  @include media-tablet {
+    flex-wrap: wrap;
+  }
+}
+.levels__level {
+  text-align: center;
+  flex-grow: 1;
+  padding: 8px;
+  background-color: $color-controls-bg;
+  @include media-laptop {
+    padding: 8px 5px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+._active {
+  background-color: $color-controls-active-bg;
+}

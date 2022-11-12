@@ -1,0 +1,13 @@
+.page {
+  padding: 150px 0 50px;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease-in;
+  @include media-laptop {
+    padding: 100px 0 30px;
+  }
+}
+.page_disable {
+  position: absolute;
+  transform: scale(0);
+}

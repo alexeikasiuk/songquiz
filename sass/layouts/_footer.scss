@@ -1,0 +1,30 @@
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  @include media-laptop {
+    padding: 15px 0;
+  }
+  @include media-mobile {
+    padding: 10px 0;
+  }
+}
+.author {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 10px;
+  background: url(./../assets/images/git.svg) 50% no-repeat;
+  background-size: contain;
+  display: block;
+  transition: all 0.3s;
+  &:hover,
+  &:after {
+    background: url(./../assets/images/git_hover.svg) 50% no-repeat;
+    background-size: contain;
+  }
+  @include media-laptop {
+    width: 35px;
+    height: 35px;
+  }
+}

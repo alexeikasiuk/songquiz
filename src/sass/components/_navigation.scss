@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.navigation__link {
+  display: inline-block;
+  background-color: $color-controls-bg;
+  cursor: pointer;
+  padding: 10px 40px;
+  transition: all 0.3s;
+  @include media-laptop {
+    padding: 8px 30px;
+  }
+  @include media-tablet {
+    padding: 20px;
+  }
+  &:hover {
+    background-color: $color-controls-active-bg;
+  }
+  &:active {
+    background-color: $color-controls-bg;
+  }
+}
+.link_active {
+  background-color: $color-controls-active-bg;
+}

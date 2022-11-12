@@ -1,0 +1,15 @@
+.school {
+  width: 135px;
+  height: 50px;
+  background: url(./../assets/images/rs_school.svg) 50% no-repeat;
+  background-size: cover;
+  transition: all 0.3s;
+  @include media-laptop {
+    width: 115px;
+    height: 42px;
+  }
+  &:hover {
+    background: url(./../assets/images/rs_school_hover.svg) 50% no-repeat;
+    background-size: cover;
+  }
+}

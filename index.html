@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css" />
+    <title>SongBirds</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <h1 class="logo">Song<span class="logo__theme">quiZ</span></h1>
+        <nav class="header__navigation">
+          <ul class="navigation">
+            <li class="navigation__link link_active" data-class="start-page">
+              К началу
+            </li>
+            <li class="navigation__link" data-class="game-page">Викторина</li>
+            <li class="navigation__link" data-class="result-page">
+              Результаты
+            </li>
+          </ul>
+        </nav>
+        <div class="burger"></div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main class="main">
+      <div class="wrapper main__wrapper">
+        <!-- start page -->
+        <div class="page start-page page_enable" data-id="start-page">
+          <div class="rules">
+            <div class="rules__birds">
+              <img src="./src/assets/images/bird.png" alt="bird" />
+              <img src="./src/assets/images/dog.png" alt="dog" />
+              <img src="./src/assets/images/lion.png" alt="lion" />
+              <img src="./src/assets/images/alligator.png" alt="alligator" />
+              <img src="./src/assets/images/bear.png" alt="bear" />
+              <img src="./src/assets/images/bird2.png" alt="bird" />
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis earum,
+            nam suscipit voluptates quasi nihil alias dolorem atque sunt quo
+            doloribus similique cumque omnis obcaecati eum consequuntur saepe!
+            Animi doloribus odio maxime perspiciatis tempore facilis? Quidem
+            commodi sapiente, suscipit eius maxime ullam nisi facere cupiditate
+            iure nobis debitis ipsa assumenda exercitationem maiores, cumque
+            dolores cum dignissimos omnis consectetur! Voluptas recusandae
+            placeat ratione adipisci illum, quo non odit libero aperiam.
+            Voluptates ipsa ipsum nobis, cum cumque maxime provident voluptatum
+            perferendis numquam modi aliquam, explicabo porro expedita
+            repudiandae corrupti, odit dolore magnam sapiente nostrum odio vero
+            officiis? Fugit cumque commodi fuga sunt?
+          </div>
+          <div class="quizzes">
+            <!-- birds quiz -->
+            <div class="quiz">
+              <div class="quiz__info">
+                <div class="quiz__image birds-image"></div>
+                <div class="quiz__description">
+                  <h2 class="quiz__title">Birds</h2>
+                  <p class="quiz__content">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Labore sed amet temporibus ipsa optio veritatis iusto sunt,
+                    praesentium voluptate. Reprehenderit facilis temporibus aut
+                    ex ab explicabo quae similique earum odit.
+                  </p>
+                </div>
+              </div>
+              <div class="quiz__btn-wrapper">
+                <button class="quiz__btn" data-id="birds">Играть</button>
+              </div>
+            </div>
+            <!-- animals quiz -->
+            <div class="quiz _disable">
+              <div class="quiz__info">
+                <div class="quiz__image animals-image"></div>
+                <div class="quiz__description">
+                  <h2 class="quiz__title">Animals</h2>
+                  <p class="quiz__content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Dolore alias repudiandae sunt, quod fuga neque id earum
+                    molestiae veritatis eos provident, aperiam explicabo eius
+                    quasi dolorem ratione pariatur a nam?
+                  </p>
+                </div>
+              </div>
+              <div class="quiz__btn-wrapper">
+                <button class="quiz__btn" data-id="animals">Играть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- game page -->
+        <div class="page game-page page_disable" data-id="game-page">
+          <div class="game">
+            <!-- game logo -->
+            <div class="game-logo">
+              Song<span class="game-logo__theme"></span>
+            </div>
+            <!-- counter -->
+            <div class="counter">
+              <p>Score: <span class="count"></span></p>
+            </div>
+            <!-- game progress range -->
+            <div class="levels">
+              <ul class="levels__container">
+                <li class="levels__level"></li>
+                <li class="levels__level"></li>
+                <li class="levels__level"></li>
+                <li class="levels__level"></li>
+                <li class="levels__level"></li>
+                <li class="levels__level"></li>
+              </ul>
+            </div>
+            <!-- win modal -->
+            <div class="win _disable">
+              <div class="win__content">
+                <h2>Поздравляем!</h2>
+                <p class="top-lvl _disable">Вы абсолютный победитель!</p>
+                <p>
+                  Вы прошли викторину и набрали
+                  <span class="win-score"></span> из 30 возможных баллов
+                </p>
+              </div>
+              <div class="btn-container">
+                <button class="win__btn">Попробовать ещё раз!</button>
+              </div>
+            </div>
+            <!-- game task -->
+            <div class="task">
+              <img src="#" alt="" class="task__image" />
+              <div class="task__info">
+                <h2 class="task__title"></h2>
+
+                <!-- player -->
+                <div class="task__player">
+                  <div class="player">
+                    <!-- play button -->
+                    <div class="play-container">
+                      <div class="toggle-play play"></div>
+                    </div>
+
+                    <!-- main player section -->
+                    <div class="prime">
+                      <!-- progress bar -->
+                      <div class="timeline">
+                        <div class="progress"></div>
+                      </div>
+
+                      <!-- controlls % data -->
+                      <div class="controls">
+                        <div class="time">
+                          <div class="current">0:00</div>
+                        </div>
+
+                        <div class="volume-container">
+                          <div class="volume-slider">
+                            <div class="volume-percentage"></div>
+                          </div>
+                          <div class="volume-button">
+                            <div class="volume icono-volumeMedium"></div>
+                          </div>
+                        </div>
+
+                        <div class="time">
+                          <div class="total">--:--</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- answer block -->
+            <div class="answers-wrapper">
+              <div class="answers">
+                <div class="answer">
+                  <span class="flag"></span><span class="name"></span>
+                </div>
+                <div class="answer">
+                  <span class="flag"></span><span class="name"></span>
+                </div>
+                <div class="answer">
+                  <span class="flag"></span><span class="name"></span>
+                </div>
+                <div class="answer">
+                  <span class="flag"></span><span class="name"></span>
+                </div>
+                <div class="answer">
+                  <span class="flag"></span><span class="name"></span>
+                </div>
+                <div class="answer">
+                  <span class="flag"></span><span class="name"></span>
+                </div>
+              </div>
+              <div class="answer-data">
+                <div class="pre-answer">
+                  <p class="pre-answer-data">Прослушауте плеер</p>
+                  <p class="pre-answer-data">Выберите птицу из списка</p>
+                </div>
+                <div class="answer__media _disable">
+                  <img src="#" alt="" class="answer__image" />
+                  <div class="answer__info">
+                    <h3 class="answer__title"></h3>
+                    <h4 class="answer__subtitle"></h4>
+                    <!-- player -->
+                    <div class="answer__player">
+                      <div class="player">
+                        <!-- play button -->
+                        <div class="play-container">
+                          <div class="toggle-play play"></div>
+                        </div>
+
+                        <!-- main player section -->
+                        <div class="prime prime_small">
+                          <!-- progress bar -->
+                          <div class="timeline">
+                            <div class="progress"></div>
+                          </div>
+
+                          <!-- controlls % data -->
+                          <div class="controls">
+                            <div class="time">
+                              <div class="current"></div>
+                            </div>
+
+                            <div class="volume-container">
+                              <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                              </div>
+                              <div class="volume-button">
+                                <div class="volume icono-volumeMedium"></div>
+                              </div>
+                            </div>
+
+                            <div class="time">
+                              <div class="total"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <audio class="answer-audio audio-player" controls>
+                        <source src="#" />
+                      </audio> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="answer__description _disable"></div>
+              </div>
+            </div>
+            <!-- go to next level -->
+            <div class="next">
+              <button class="next__btn _disable">Next Level</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- results page -->
+        <div class="page result-page page_disable" data-id="result-page">
+          <div class="results">
+            <h3 class="results__title">Результаты последних викторин</h3>
+            <table class="results__table"></table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <a class="school" href="https://rs.school/js/"></a>
+        <div class="meta">
+          <a class="author" href="https://github.com/alexeikasiuk"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

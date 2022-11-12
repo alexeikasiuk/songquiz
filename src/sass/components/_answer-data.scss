@@ -1,0 +1,54 @@
+.pre-answer-data {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+.answer-data {
+  background-color: $color-block-bg;
+  width: 540px;
+  padding: 15px;
+  height: 290px;
+  border: 1px solid $color-block-border;
+  border-radius: 5px;
+  & > *._disable {
+    display: none;
+  }
+  @include media-tablet {
+    width: auto;
+    height: auto;
+  }
+}
+.answer__media {
+  display: flex;
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+.answer__image {
+  width: 200px;
+  height: 155px;
+  border-radius: 15px;
+}
+.answer__info {
+  padding-left: 20px;
+  flex: 1;
+  @include media-mobile {
+    padding: 20px 0;
+  }
+}
+.answer__title,
+.answer__subtitle {
+  margin: 0;
+  font-weight: normal;
+  border-bottom: 1px solid $color-block-border;
+  padding: 10px 0;
+}
+.answer__player {
+  margin-top: 20px;
+  height: 40px;
+}
+.answer__description {
+  padding-top: 20px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  text-align: justify;
+}

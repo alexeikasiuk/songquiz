@@ -1,0 +1,26 @@
+.results {
+  background-color: $color-block-bg;
+  padding: 20px;
+  border-radius: 5px;
+}
+.results__table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid $color-block-border;
+  padding: 5px;
+  width: 33%;
+  @include media-tablet {
+    width: auto;
+  }
+  @include media-mobile {
+    font-size: 1.5rem;
+  }
+}
+.results__title {
+  text-align: center;
+  padding: 20px;
+}
